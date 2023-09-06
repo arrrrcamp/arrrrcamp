@@ -1,0 +1,397 @@
+@import url(normalize.css);
+@import url(bootstrap.css);
+html, body {
+  height: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.5; }
+
+html, body, * {
+  position: relative; }
+
+body {
+  background: #0b0b10;
+  color: #bbb;
+  font-family: "PT Serif", Georgia, "Times New Roman", serif;
+  line-height: 1.375;
+  background: #fff; }
+
+h1, h2, h3, h4 {
+  font-family: "PT Sans", Helvetica, Arial, sans-serif; }
+
+section {
+  padding-top: 3em;
+  padding-bottom: 3em;
+  border-bottom: 1px solid #ddd;
+  background: #fff;
+  color: #222; }
+  section:first-child {
+    padding-top: 0; }
+
+article {
+  padding-top: 2em;
+  padding-bottom: 2em; }
+  article p {
+    margin-top: 2em; }
+
+.tagline {
+  background: #0b0b10;
+  padding-top: 1em; }
+  .tagline h3 {
+    text-align: center;
+    color: #eee;
+    letter-spacing: 0.05em; }
+  .tagline section {
+    background: #0b0b10; }
+
+section {
+  text-align: center; }
+  section p {
+    text-align: left; }
+  section h2 {
+    text-transform: uppercase;
+    font-size: 1.618em;
+    letter-spacing: 0.05em;
+    line-height: 1.5;
+    color: #758559;
+    border-bottom: 1px solid #758559;
+    display: inline-block;
+    margin-bottom: 2em; }
+    section h2:not(:first-child) {
+      margin-top: 2.5em; }
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #b1382e;
+  line-height: 1.5; }
+
+a:hover,
+a:active {
+  color: #892b23;
+  text-decoration: none;
+  border-bottom: 1px solid #892b23; }
+
+ul {
+  text-align: left; }
+
+small {
+  font-size: 0.75em; }
+
+.center {
+  text-align: center; }
+
+.absolute-center {
+  margin: auto; }
+
+.logo-container {
+  max-width: 600px;
+  margin: 0 auto; }
+
+.logo-link {
+  z-index: 3;
+  font-size: 0.875em;
+  display: block;
+  margin-top: 1.928306551em; }
+  .logo-link:hover {
+    border: 0; }
+  .logo-link .logo {
+    background: url("../images/arrrrcamp_logo.png") center center no-repeat;
+    background-size: cover;
+    width: 7.03125em;
+    height: 3.12em; }
+
+nav {
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  padding-top: 1.928306551em;
+  padding-right: 1.928306551em;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 4; }
+  nav ul li {
+    display: inline-block;
+    float: left;
+    padding: 0.3em 0.8em 0.13em; }
+    nav ul li.active {
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 3px; }
+    nav ul li a:link, nav ul li a:visited {
+      color: #fff; }
+    nav ul li a:hover, nav ul li a:active {
+      border-bottom: 1px solid #fff; }
+
+header {
+  min-width: 100%;
+  min-height: 80%;
+  margin: 0; }
+  header .hero-container {
+    position: absolute;
+    z-index: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background: linear-gradient(rgba(11, 11, 16, 0.3) 50%, #0b0b10 100%), url("../images/handelsbeurs_568.jpg");
+    background-position: top left, center center;
+    background-repeat: repeat, no-repeat;
+    background-size: auto, cover; }
+  header .hero-content {
+    padding: 0 3em;
+    top: 50%;
+    position: absolute;
+    transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    text-align: center;
+    width: 100%;
+    z-index: 3; }
+    header .hero-content h1 {
+      margin-top: 3em;
+      text-transform: uppercase;
+      font-size: 2.75em;
+      color: #fff;
+      text-shadow: 2px 2px rgba(0, 0, 0, 0.4);
+      letter-spacing: 0.05em; }
+    header .hero-content span.date {
+      font-family: "PT Sans", Helvetica, Arial, sans-serif;
+      text-transform: uppercase;
+      font-size: 0.8em;
+      color: #fff;
+      text-shadow: 2px 2px rgba(0, 0, 0, 0.4); }
+    header .hero-content p {
+      margin: 2em 0;
+      font-size: 1.2em;
+      color: #ccc;
+      text-shadow: 2px 2px rgba(0, 0, 0, 0.4); }
+    header .hero-content .btn {
+      border: 2px solid #fff;
+      color: #fff; }
+      header .hero-content .btn:hover {
+        color: #333;
+        background: #fff; }
+
+.tickets .col-sm-4 {
+  min-height: 10em; }
+.tickets h3 {
+  text-align: center; }
+  .tickets h3.sold-out:after {
+    content: 'Sold out';
+    display: block;
+    position: absolute;
+    color: #b1382e;
+    text-transform: uppercase;
+    border: 6px solid #b1382e;
+    border-radius: 5px;
+    font-size: 1.4em;
+    font-weight: 800;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    background: rgba(255, 255, 255, 0);
+    z-index: 99;
+    margin: 0 auto;
+    width: 7em;
+    left: 50%;
+    margin-left: -3.5em;
+    text-align: center;
+    transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg); }
+
+.tagline .btn {
+  border: 2px solid #b1382e;
+  color: #fff;
+  background: #b1382e; }
+  .tagline .btn:hover {
+    border: 2px solid #b1382e;
+    color: #b1382e;
+    background: none; }
+
+.btn {
+  display: inline-block;
+  padding: 0.8em 2em;
+  border: 1px solid #b1382e;
+  color: #b1382e;
+  border-radius: 5px;
+  transition: all 0.5s;
+  margin: 2em auto; }
+  .btn:hover, .btn:active {
+    background: #b1382e;
+    color: #fff;
+    border: 1px solid transparent;
+    transition: all 0.5s; }
+
+input[type=submit] {
+  background: transparent;
+  padding: 0.5em 1.2em;
+  margin: 1em 0;
+  display: block; }
+
+input[type=text],
+input[type=email] {
+  background: #eee;
+  border: 1px solid #758559;
+  border-radius: 3px;
+  width: 100%;
+  padding: 0.3em 0.9em; }
+
+footer section {
+  border-bottom: none; }
+  footer section:first-child {
+    padding-top: 3em; }
+  footer section h3 {
+    color: #758559;
+    font-size: 1.2em;
+    line-height: 1.8;
+    border-bottom: 1px solid #758559;
+    letter-spacing: 0.05em; }
+
+blockquote {
+  text-align: left;
+  border: 0;
+  padding-left: 100px; }
+  blockquote img {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -37.5px;
+    border-radius: 75px; }
+
+.sponsors {
+  text-align: center;
+  padding: 1em 0; }
+  .sponsors:after {
+    content: '';
+    display: table;
+    clear: both; }
+  .sponsors .sponsor {
+    display: inline-block;
+    margin: 2em; }
+    .sponsors .sponsor a {
+      max-width: 100%; }
+      .sponsors .sponsor a:hover, .sponsors .sponsor a:active {
+        border-bottom: none; }
+      .sponsors .sponsor a img {
+        max-width: 100%;
+        vertical-align: center; }
+
+.speakers-brief, .crew-brief {
+  text-align: center; }
+  .speakers-brief:after, .crew-brief:after {
+    display: table;
+    content: ' ';
+    clear: both; }
+  .speakers-brief .speaker, .crew-brief .speaker {
+    height: 21em; }
+  .speakers-brief .crewmember, .crew-brief .crewmember {
+    height: 16em; }
+  .speakers-brief .speaker, .speakers-brief .crewmember, .crew-brief .speaker, .crew-brief .crewmember {
+    width: 14em;
+    display: inline-block;
+    vertical-align: top; }
+    .speakers-brief .speaker h4, .speakers-brief .crewmember h4, .crew-brief .speaker h4, .crew-brief .crewmember h4 {
+      max-width: 90%;
+      margin: 0 auto; }
+      .speakers-brief .speaker h4 a, .speakers-brief .crewmember h4 a, .crew-brief .speaker h4 a, .crew-brief .crewmember h4 a {
+        color: #0b0b10; }
+        .speakers-brief .speaker h4 a:hover, .speakers-brief .speaker h4 a:active, .speakers-brief .crewmember h4 a:hover, .speakers-brief .crewmember h4 a:active, .crew-brief .speaker h4 a:hover, .crew-brief .speaker h4 a:active, .crew-brief .crewmember h4 a:hover, .crew-brief .crewmember h4 a:active {
+          border-bottom: 1px solid #0b0b10; }
+    .speakers-brief .speaker .avatar, .speakers-brief .crewmember .avatar, .crew-brief .speaker .avatar, .crew-brief .crewmember .avatar {
+      width: 150px;
+      display: inline-block; }
+      .speakers-brief .speaker .avatar:hover, .speakers-brief .speaker .avatar:active, .speakers-brief .crewmember .avatar:hover, .speakers-brief .crewmember .avatar:active, .crew-brief .speaker .avatar:hover, .crew-brief .speaker .avatar:active, .crew-brief .crewmember .avatar:hover, .crew-brief .crewmember .avatar:active {
+        border: 0; }
+      .speakers-brief .speaker .avatar img, .speakers-brief .crewmember .avatar img, .crew-brief .speaker .avatar img, .crew-brief .crewmember .avatar img {
+        max-width: 100%; }
+
+body.speakers h2 {
+  margin-bottom: 1em; }
+body.speakers h3 {
+  margin-top: 0; }
+body.speakers .speaker {
+  text-align: left; }
+  body.speakers .speaker img {
+    float: left;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    width: 150px; }
+
+body.schedule section.sessions h3 {
+  text-align: left;
+  margin: 0; }
+body.schedule section.sessions a {
+  color: #0b0b10; }
+  body.schedule section.sessions a:hover {
+    border-color: #0b0b10; }
+body.schedule section.sessions p {
+  margin: 0; }
+body.schedule section.sessions .duration-10, body.schedule section.sessions .duration-10 .session-info {
+  height: 1.75em; }
+body.schedule section.sessions .duration-20, body.schedule section.sessions .duration-20 .session-info {
+  height: 3.5em; }
+body.schedule section.sessions .duration-30, body.schedule section.sessions .duration-30 .session-info {
+  height: 5.25em; }
+body.schedule section.sessions .duration-40, body.schedule section.sessions .duration-40 .session-info {
+  height: 7em; }
+body.schedule section.sessions .duration-50, body.schedule section.sessions .duration-50 .session-info {
+  height: 8.75em; }
+body.schedule section.sessions .duration-60, body.schedule section.sessions .duration-60 .session-info {
+  height: 10.5em; }
+body.schedule section.sessions .duration-70, body.schedule section.sessions .duration-70 .session-info {
+  height: 12.25em; }
+body.schedule section.sessions .duration-80, body.schedule section.sessions .duration-80 .session-info {
+  height: 14em; }
+body.schedule section.sessions .duration-90, body.schedule section.sessions .duration-90 .session-info {
+  height: 15.75em; }
+body.schedule section.sessions .duration-100, body.schedule section.sessions .duration-100 .session-info {
+  height: 17.5em; }
+body.schedule section.sessions .session-time {
+  background: #d7ddcd;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px; }
+body.schedule section.sessions .day:first-child {
+  border-right: 1px solid #d3d3e0; }
+  body.schedule section.sessions .day:first-child .session-time {
+    float: right; }
+  body.schedule section.sessions .day:first-child .session-info p, body.schedule section.sessions .day:first-child .session-info h3 {
+    text-align: right; }
+body.schedule section.sessions .session, body.schedule section.sessions .break {
+  padding: 0 2em; }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Styles for mobile */ }
+@media only screen and (min-width: 569x) {
+  header .hero-container {
+    background: linear-gradient(rgba(11, 11, 16, 0.3) 50%, #0b0b10 100%), url("../images/handelsbeurs_1024.jpg");
+    background-position: top left, center center;
+    background-repeat: repeat, no-repeat;
+    background-size: auto, cover; } }
+@media only screen and (min-width: 1025px) {
+  header .hero-container {
+    background: linear-gradient(rgba(11, 11, 16, 0.3) 50%, #0b0b10 100%), url("../images/handelsbeurs_1680.jpg");
+    background-position: top left, center center;
+    background-repeat: repeat, no-repeat;
+    background-size: auto, cover; } }
+@media only screen and (min-width: 1681px) {
+  header .hero-container {
+    background: linear-gradient(rgba(11, 11, 16, 0.3) 50%, #0b0b10 100%), url("../images/handelsbeurs_2560.jpg");
+    background-position: top left, center center;
+    background-repeat: repeat, no-repeat;
+    background-size: auto, cover; } }
+@media only screen and (min-width: 750px) {
+  body {
+    font-size: 1.125em; }
+
+  article p {
+    text-align: left; }
+
+  header {
+    font-size: 1.25em; } }
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) {
+  /* Don't forget your Retina CSS! */ }
+
+/*# sourceMappingURL=style.css.map */
